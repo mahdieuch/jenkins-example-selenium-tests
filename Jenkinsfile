@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-        label 'docker && maven && gradle && linux'  
-    }
+ agent any
   stages {
     stage('Verify browsers are installed') {
       steps {
